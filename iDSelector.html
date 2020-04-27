@@ -1,0 +1,27 @@
+<!-- 
+	* Id selector is the most effecient Selector in Jquery
+	* There are differences between document.getElementById('id_name') and $('#id_name')
+	* javascirpt Id selector is faster than Jquery ID selector.
+	* Javascript Id selector provides a raw javascript object where jquery wraps that javascript object and return jquery object collection
+	* That is why jquery id selector is slower than the javascript id selector.
+	* jQuery id selector provides the oppotunity to use jQuery methods like, .html(),.css() etc on jQuery id selector.
+ -->
+
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Id selector in Jquery</title>
+	<script src = "jquery-1.12.4.js"></script>
+	<script type="text/javascript">
+		$(document).ready(function(){
+			$('#but1').click(function(){
+				$('#but1').css('background-color','red');
+			})
+
+		});
+	</script>
+</head>
+<body>
+	<input type="button" id="but1" name="button" value="Click Me">
+</body>
+</html>

@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Element Selector</title>
+	<script src = "jquery-1.12.4.js"></script>
+		<script type="text/javascript">
+			$(document).ready(function(){
+
+			$('tr').css('background-color','green');
+			$('table tr').each(function(){
+				//alert($(this).html());
+			})
+			
+			$('#div1').click(function(){
+				//$('a').css('background-color','red');         
+				// Makes red all the anchor tags
+				$('span a').css('background-color','black');    
+				// Makes black only the span tags the anchor tags
+			})
+				
+
+			});
+		</script>
+
+
+</head>
+<body>
+	<table border="1">
+		<tr>
+			<td>Java</td>
+			<td>C</td>
+			<td>Javascript</td>
+		</tr>
+		<tr>
+			<td>Spring</td>
+			<td>Hibernate</td>
+			<td>jQuery</td>
+		</tr>
+		<tr>
+			<td>Selenium</td>
+			<td>Selenim Webdriver</td>
+			<td>Protractor</td>
+		</tr>
+		<tr>
+			<td>HTML</td>
+			<td>CSS</td>
+			<td>Bootstrap</td>
+		</tr>
+		<tr>
+			<td>mbstuAlumni</td>
+			<td>Zoo</td>
+			<td>Doctor House</td>
+		</tr>
+	</table>
+	<div id = "div1">
+		<a href="#">No Click</a>
+		<br>
+		<a href="#">Yes Click</a>
+	</div>
+	<span>
+		<a href="#">Span Click</a>
+	</span>
+</body>
+</html>

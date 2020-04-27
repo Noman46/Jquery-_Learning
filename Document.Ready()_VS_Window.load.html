@@ -1,0 +1,28 @@
+<!-- 
+	* What is the difference between $(documnet).ready(function(){}) and $(window).load(function(){})
+	* document.ready fires up when all the Browser DOM elemnts are ready.
+	* window.load fires up when all the images,frame, css etc are ready.
+	* document.ready fires up before the window.load
+
+ -->
+
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Doccumen.readyVsWindow.load</title>
+	<script src = "jquery-1.12.4.js"></script>
+	<script type="text/javascript">
+		$(window).load(function(){
+			alert('From Window.load');
+		});
+		$(document).ready(function(){
+ 			alert('From Document.ready');
+		});
+
+
+	</script>
+</head>
+<body>
+
+</body>
+</html>
