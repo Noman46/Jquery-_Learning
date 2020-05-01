@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Is Checked </title>
+	<script src = "jquery-1.12.4.js"></script>
+	<script type="text/javascript">
+		$(document).ready(function(){
+			$('#but1').click(function(){
+				var result = $('input[type="radio"]:checked');
+				if(result.length >0){
+					$('#mesg').html("You Checked "+ result.val());
+				}
+			})
+		})
+	</script>
+</head>
+<body>
+	<h3 style="color: Green">Checking a Radio Input Type is selected or not</h3>
+	<form>
+		Gender: <input type="radio" name="M" value="Male">Male
+		        <input type="radio" name="F" value="Female">Female
+		        <br><br>
+		        <input id="but1" type="Button" name="" value="Submit">
+	</form>
+
+	<span id="mesg"></span>
+</body>
+</html>

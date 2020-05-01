@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+
+<!-- 
+
+	* input is to select only the elements have input tag
+	* :input is to select all the elemens that used take uset inputs like textarea,Button, Select etc.
+	* using input is beeter than :input in performance wise.
+
+ -->
+
+<html>
+<head>
+	<title>InputVsInput</title>
+	<script src = "jquery-1.12.4.js"></script>
+	<script type="text/javascript">
+		$(document).ready(function(){
+			// $('input').each(function(){
+			// 	alert($(this).val());
+			// })
+
+			$(':input').each(function(){
+				alert($(this).val());
+			})
+		})
+	</script>
+</head>
+<body>
+	<form>
+		First Name: <input type="text"  name="" value="Noman"><br>
+		Last Name: <input type="text" name="" value="Ibrahim"><br>
+		Gender: <input type="radio" name="" checked="checked" value="Male">Male
+		        <input type="radio" name="" value="Female">Female
+		<br>
+		skills: <input type="checkbox" name="" checked="checked" value="JavaScript"/>JavaScript
+		        <input type="checkbox" name="" value="JQuery"/>JQuery
+		        <input type="checkbox" name="" value="JASON"/>JASON<br>
+		Country:
+		<select>
+			<option value="USA">USA</option>
+			<option value="India">India</option>
+			<option selected="selected" value="Bangladesh">Bangladesh</option>
+		</select>
+		<br><br>
+		Summary:<br>
+		<textarea>I am Junior Dev. Love to worjk wiht new tech</textarea>
+		<br><br>
+		<input type="button" name="" value="Submit">
+
+	</form>
+</body>
+</html>
