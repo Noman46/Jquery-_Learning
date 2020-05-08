@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Each Function 2</title>
+	<script src = "jquery-1.12.4.js"></script>
+	<script type="text/javascript">
+	$(document).ready(function(){
+		var result = '';
+		$('li').each(function(){
+			result +='<br/>'+$(this).text();
+		});
+		$('#result').html(result);
+	})
+		
+	</script>
+</head>
+<body>
+<h1>The Tech I kno</h1>
+<ul>
+	<li>Java</li>
+	<li>Javascript</li>
+	<li>Protractor</li>
+	<li>Spring</li>
+</ul>
+<div id = "result"></div>
+</body>
+</html>
